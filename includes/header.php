@@ -44,15 +44,18 @@
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.header-top -->
+
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
             <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
           </a>
+
           <button class="navbar-toggler" type="button">
             <span class="menu-lines"><span></span></span>
           </button>
+
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav mr-auto">
               <li class="nav__item has-dropdown">
@@ -166,7 +169,9 @@
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
           </div><!-- /.navbar-collapse -->
+
           <button class="action__btn-search"><i class="fa fa-search"></i></button>
+
           <div class="d-none d-xl-flex align-items-center position-relative ml-30">
             <a href="appointment.html" class="btn btn__primary btn__rounded ml-30">
               <i class="icon-calendar"></i>
