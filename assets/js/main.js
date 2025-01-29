@@ -273,10 +273,10 @@ $(function () {
                 '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
                 '</div>',
             patterns: {
-                youtube: {
-                    index: 'youtube.com/',
+                 : {
+                    index: ' .com/',
                     id: 'v=',
-                    src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                    src: 'https://www. .com/embed/%id%?autoplay=1'
                 }
             },
             srcAction: 'iframe_src',
