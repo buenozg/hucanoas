@@ -24,7 +24,7 @@
      
  ----------------------------*/
 
-$(function () {
+ $(function () {
 
     "use strict";
 
@@ -273,10 +273,10 @@ $(function () {
                 '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
                 '</div>',
             patterns: {
-                 : {
-                    index: ' .com/',
+                youtube: {
+                    index: 'youtube.com/',
                     id: 'v=',
-                    src: 'https://www. .com/embed/%id%?autoplay=1'
+                    src: 'https://www.youtube.com/embed/%id%?autoplay=1'
                 }
             },
             srcAction: 'iframe_src',
