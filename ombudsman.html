@@ -14,6 +14,73 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        textarea#mensagem {
+            width: 100%;
+            height: 150px; /* Ajuste a altura conforme necessário */
+            padding: 10px; /* Dá mais espaço interno */
+            font-size: 16px; /* Aumenta o tamanho do texto */
+            border-radius: 10px; /* Borda arredondada */
+            border: 1px solid #ccc; /* Borda sutil */
+            background-color: #f8f9fa; /* Fundo claro */
+            outline: none; /* Remove o contorno azul padrão */
+            transition: 0.3s; /* Suaviza a interação */
+        }
+
+        textarea#mensagem:focus {
+            border-color: #007bff; /* Muda a cor da borda ao focar */
+            background-color: #ffffff; /* Mantém o fundo claro */
+        }
+        input[name="titulo"] {
+            width: 100%;
+            padding: 10px; /* Dá mais espaço interno */
+            font-size: 16px; /* Ajuste do tamanho do texto */
+            border-radius: 10px; /* Borda arredondada */
+            border: 1px solid #ccc; /* Borda semelhante ao select */
+            background-color: #f8f9fa; /* Fundo claro */
+            outline: none; /* Remove o contorno padrão */
+            transition: 0.3s; /* Suaviza a transição */
+        }
+
+        input[name="titulo"]:focus {
+            border-color: #007bff; /* Altera a cor da borda ao focar */
+            background-color: #ffffff; /* Mantém o fundo claro */
+        }
+
+        .icone-ouvidoria {
+            width: 130%; /* Define um tamanho fixo */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Evita comportamento inline estranho */
+            margin-bottom: 10px; /* Dá um espaçamento abaixo do ícone */
+        }
+
+        .ouvidoria-header {
+            display: flex; /* Ativa o Flexbox */
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .icone-ouvidoria {
+            width: 50px; /* Ajuste conforme necessário */
+            height: auto;
+        }
+
+        .ouvidoria-titulo {
+            word-wrap: break-word;
+            max-width: 100%;
+        }
+        .ouvidoria-info p {
+            word-wrap: break-word;
+        }
+        .blog-grid {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+
+    </style>
+
 </head>
 
 <body>
@@ -141,11 +208,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="pagetitle__heading">Notícias HU Canoas</h1>
+            <h1 class="pagetitle__heading">Canal de Ouvidoria</h1>
             <nav>
               <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                <li class="breadcrumb-item"><a href="index.html">Contato</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Ouvidoria</li>
               </ol>
             </nav>
           </div><!-- /.col-12 -->
@@ -159,196 +226,76 @@
     <section class="blog-grid">
       <div class="container">
         <div class="row">
-          <!-- Post Item #1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/1.jpg" alt="post image" loading="lazy">
-                </a>
-              </div><!-- /.post__img -->
-              <div class="post__body">
-                <div class="post__meta-cat">
-                  <a href="#">Pediatria</a>
-                </div><!-- /.blog-meta-cat -->
-                <div class="post__meta d-flex">
-                  <span class="post__meta-date">Jan 30, 2022</span>
-                  <a class="post__meta-author" href="#">Lucas Silva</a>
-                </div>
-                <h4 class="post__title"><a href="#">Hospital Universitário de Canoas bate a marca de 2 mil e 500 partos em 2023</a></h4>
 
-                <p class="post__desc">Referência para gestantes de 18 municípios do Rio Grande do Sul 
-                e entre as 5 maiores maternidades do Estado, o Centro Obstétrico do Hospital 
-                Universitário de Canoas bateu a marca de mais de 2 mil e 500 partos em 2023. 
-                Somente nos últimos 70 dias, foram mais de 600 procedimentos realizados na instituição.
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
-                  <span>Saiba Mais</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.post__body -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
+             <!-- ======================
+            Blog Grid - Canal de Ouvidoria
+            ========================= -->
+            <section class="blog-grid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Coluna da Esquerda (Descritivo + Ícone) -->
+                        <div class="col-md-6">
+                            <div class="ouvidoria-info">
+                                <div class="ouvidoria-header">
+                                    
+                                    <h2 class="ouvidoria-titulo">Envie-nos uma mensagem e diga como podemos te ajudar</h2>
+                                </div>
 
-          <!-- Post Item #2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/2.jpg" alt="post image" loading="lazy">
-                </a>
-              </div><!-- /.post__img -->
-              <div class="post__body">
-                <div class="post__meta-cat">
-                  <a href="#">Cirurgias</a>
-                </div><!-- /.blog-meta-cat -->
-                <div class="post__meta d-flex">
-                  <span class="post__meta-date">Jan 30, 2022</span>
-                  <a class="post__meta-author" href="#">Gustavo Bueno</a>
-                </div>
-                <h4 class="post__title"><a href="#">Cirurgias bariátricas serão retomadas no HU a partir de segunda-feira</a></h4>
-                <p class="post__desc">Ótima notícia. A partir desta segunda-feira, 30, o Hospital Universitário de Canoas irá retomar 
-                os procedimentos de cirurgias bariátricas.
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
-                  <span>Saiba Mais</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.post__body -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
+                                <p>A Ouvidoria é o seu canal de comunicação direta com a empresa para o registro de reclamações, sugestões e elogios.</p>
+                                <p><strong>Horário de Atendimento:</strong> 2ª a 6ª feira, de 08h às 17h.</p>
+                                <p><strong>Telefone:</strong> <span class="telefone">9999-9999</span></p>
 
-          <!-- Post Item #3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/3.jpg" alt="post image" loading="lazy">
-                </a>
-              </div><!-- /.post__img -->
-              <div class="post__body">
-                <div class="post__meta-cat">
-                  <a href="#">Comunidade</a>
-                </div><!-- /.blog-meta-cat -->
-                <div class="post__meta d-flex">
-                  <span class="post__meta-date">Jan 28, 2022</span>
-                  <a class="post__meta-author" href="#">Vinicius Casotti</a>
-                </div>
-                <h4 class="post__title"><a href="#">Outubro Rosa apresenta ações de conscientização no Hospital Universitário de Canoas</a></h4>
-
-                <p class="post__desc">A semana foi de mobilização no Hospital Universitário de Canoas. Funcionários de todos os setores 
-                participaram das ações para alertar sobre a importância do diagnóstico precoce e prevenção do câncer de mama, 
-                no chamado OUTUBRO ROSA.
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
-                  <span>Saiba Mais</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.post__body -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-
-          <!-- Post Item #4 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/1.jpg" alt="post image" loading="lazy">
-                </a>
-              </div><!-- /.post__img -->
-              <div class="post__body">
-                <div class="post__meta-cat">
-                  <a href="#">Pediatria</a>
-                </div><!-- /.blog-meta-cat -->
-                <div class="post__meta d-flex">
-                  <span class="post__meta-date">Jan 30, 2022</span>
-                  <a class="post__meta-author" href="#">Lucas Silva</a>
-                </div>
-                <h4 class="post__title"><a href="#">Hospital Universitário de Canoas bate a marca de 2 mil e 500 partos em 2023</a></h4>
-
-                <p class="post__desc">Referência para gestantes de 18 municípios do Rio Grande do Sul 
-                e entre as 5 maiores maternidades do Estado, o Centro Obstétrico do Hospital 
-                Universitário de Canoas bateu a marca de mais de 2 mil e 500 partos em 2023. 
-                Somente nos últimos 70 dias, foram mais de 600 procedimentos realizados na instituição.
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
-                  <span>Saiba Mais</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.post__body -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-
-          <!-- Post Item #5 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/2.jpg" alt="post image" loading="lazy">
-                </a>
-              </div><!-- /.post__img -->
-              <div class="post__body">
-                <div class="post__meta-cat">
-                  <a href="#">Cirurgias</a>
-                </div><!-- /.blog-meta-cat -->
-                <div class="post__meta d-flex">
-                  <span class="post__meta-date">Jan 30, 2022</span>
-                  <a class="post__meta-author" href="#">Gustavo Bueno</a>
-                </div>
-                <h4 class="post__title"><a href="#">Cirurgias bariátricas serão retomadas no HU a partir de segunda-feira</a></h4>
-                <p class="post__desc">Ótima notícia. A partir desta segunda-feira, 30, o Hospital Universitário de Canoas irá retomar 
-                os procedimentos de cirurgias bariátricas.
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
-                  <span>Saiba Mais</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.post__body -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-
-          <!-- Post Item #6 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/3.jpg" alt="post image" loading="lazy">
-                </a>
-              </div><!-- /.post__img -->
-              <div class="post__body">
-                <div class="post__meta-cat">
-                  <a href="#">Comunidade</a>
-                </div><!-- /.blog-meta-cat -->
-                <div class="post__meta d-flex">
-                  <span class="post__meta-date">Jan 28, 2022</span>
-                  <a class="post__meta-author" href="#">Vinicius Casotti</a>
-                </div>
-                <h4 class="post__title"><a href="#">Outubro Rosa apresenta ações de conscientização no Hospital Universitário de Canoas</a></h4>
-
-                <p class="post__desc">A semana foi de mobilização no Hospital Universitário de Canoas. Funcionários de todos os setores 
-                participaram das ações para alertar sobre a importância do diagnóstico precoce e prevenção do câncer de mama, 
-                no chamado OUTUBRO ROSA.
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link btn__rounded">
-                  <span>Saiba Mais</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.post__body -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-
-        </div><!-- /.row -->
-
-        <div class="row">
-          <div class="col-12 text-center">
-            <nav class="pagination-area">
-              <ul class="pagination justify-content-center">
-                <li><a class="current" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#"><i class="icon-arrow-right"></i></a></li>
-              </ul>
-            </nav><!-- .pagination-area -->
-          </div><!-- /.col-12 -->
+                            </div>
+                        </div>
+            
+                        <!-- Coluna da Direita (Formulário) -->
+                        <div class="col-md-6">
+                            <div class="ouvidoria-form">
+                                <h2>Canal de Ouvidoria</h2>
+                                <form action="#" method="post">
+                                    <div class="form-group">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" name="nome" placeholder="Digite um nome..." class="form-control">
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <label for="cpf">CPF:</label>
+                                        <input type="text" name="cpf" placeholder="Digite um CPF..." class="form-control">
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <label for="email">E-mail:</label>
+                                        <input type="email" name="email" placeholder="Digite um e-mail..." class="form-control">
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <label for="categoria">Categoria:</label>
+                                        <select id="categoria" name="categoria" class="form-control">
+                                            <option value="reclamacao">RECLAMAÇÃO</option>
+                                            <option value="elogio">ELOGIO</option>
+                                            <option value="sugestao">SUGESTÃO</option>
+                                            <option value="informacao">INFORMAÇÃO</option>
+                                            <option value="solicitacao">SOLICITAÇÃO</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <label for="mensagem">Mensagem:</label>
+                                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." class="form-control"></textarea>
+                                    </div>
+            
+                                    <a href="https://hu-tzion.asl.med.br/hucanoas/portal/#/" class="btn btn__primary btn__rounded ml-30">
+                                        <span>ENVIAR</span>
+                                        <i class="icon-arrow-right"></i>
+                                     </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </section><!-- /.blog-grid -->
+            
+         
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.blog Grid -->
