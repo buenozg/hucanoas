@@ -109,11 +109,21 @@
     /*==========   Set Background-img to section   ==========*/
     $('.bg-img').each(function () {
         var imgSrc = $(this).children('img').attr('src');
-        $(this).parent().css({
-            'background-image': 'url(' + imgSrc + ')',
-            'background-size': 'cover',
-            'background-position': 'center',
-        });
+        var sliderClass = $(this).children('img').hasClass('darken-img')
+        if(!sliderClass) {
+            $(this).parent().css({
+                'background-image': 'url(' + imgSrc + ')',
+                'background-size': 'cover',
+                'background-position': 'center',
+            });
+        } else {
+            $(this).parent().css({
+                'background': 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(' + imgSrc + ') !important',
+                'background-size': 'cover',
+                'background-position': 'center',
+            });
+
+        }
         $(this).parent().addClass('bg-img');
         if ($(this).hasClass('background-size-auto')) {
             $(this).parent().addClass('background-size-auto');
