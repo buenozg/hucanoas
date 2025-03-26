@@ -972,7 +972,7 @@ textarea {
 }
 
 .color-primary {
-  color: #21cdc0 !important;
+  color: var(--color-secondary-800) !important;
 }
 
 .color-secondary {
@@ -1438,7 +1438,7 @@ h6 {
 
 .btn__primary {
   color: #ffffff;
-  background-color: #21cdc0;
+  background-color: var(--color-secondary-700)
 }
 .btn__primary .icon-outlined {
   color: #213360;
@@ -4246,6 +4246,7 @@ input[type=radio] {
   overflow: hidden;
   position: relative;
   padding: 37px 40px 35px;
+  
 }
 .feature-item .feature__icon {
   font-size: 50px;
@@ -4342,7 +4343,7 @@ input[type=radio] {
 
 .features-layout3 .feature-item-custom {
   overflow: hidden;
-  background-color: #21cdc0;
+  background-color:  var(--color-secondary-700)
 }
 .features-layout3 .feature-item-custom:before {
   font-family: icomoon;
